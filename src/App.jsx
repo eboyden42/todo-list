@@ -32,9 +32,6 @@ export default function App() {
     })
   }
 
-
-  console.log(todos)
-
   return <>
   <NewTodoForm addTodo={addTodo} />
   <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
