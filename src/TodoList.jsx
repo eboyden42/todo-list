@@ -7,9 +7,9 @@ export function TodoList({todos, toggleTodo, deleteTodo}) {
     }
 
     return <>
-    <h1 className="header">Todo List</h1>
+    <h1 className="header">List:</h1>
     <ul className="list">
-      {countIncompleteTodos() === 0 ? "All Tasks Complete!" : "You have "+countIncompleteTodos()+" task(s) remaining."}
+      {countIncompleteTodos() === 0 ? "All Tasks Complete!" : countIncompleteTodos()+" item(s) remaining."}
       {todos.map((todo) => {
         return <TodoItem title={todo.title} id={todo.id} complete={todo.complete} key={todo.id} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
       })}

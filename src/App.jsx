@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react"
 import { NewTodoForm } from "./NewTodoForm"
 import { TodoList } from "./TodoList"
+import Header from "./Header"
 import "./styles.css";
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
   }
 
   return <>
+  <Header />
   <NewTodoForm addTodo={addTodo} />
   <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
   </>
