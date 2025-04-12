@@ -35,7 +35,9 @@ export default function App() {
 
   return <>
   <Header />
+  <main>
   <NewTodoForm addTodo={addTodo} />
   <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+  </main>
   </>
 }

@@ -1,33 +1,48 @@
 * {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
 body {
   background: #fffcfc;
   color: hsl(200, 5%, 12%);
-  max-width: 400px;
-  padding: 1rem;
+  justify-content: center;
+  padding: 0;
   margin: 0 auto;
 }
 
-.header-container {
-  background-color: black;
+#header-container {
+  width: 100%;
+  background-color: rgb(243, 241, 241);
+  color: rgb(45, 79, 122);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
-.header-container > img {
+#header-container > img {
   width: 50px;
 }
 
-.header-container > h1 {
-  font-weight: 400;
+#header-container > h1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .new-item-form {
+  max-width: 400px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -39,7 +54,8 @@ body {
 }
 
 .form-row > label {
-  font-weight: 700;
+  font-weight: 400;
+  color: rgb(45, 79, 122)
 }
 
 .btn {
@@ -85,7 +101,8 @@ body {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 400;
+  color: rgb(45, 79, 122)
 }
 
 .list {
@@ -93,6 +110,7 @@ body {
   padding: 0;
   margin-left: 1rem;
   list-style: none;
+  color: rgb(45, 79, 122)
 }
 
 .list li:has(input:checked) label {
