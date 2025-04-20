@@ -1,8 +1,5 @@
 import { useState } from "react";
 import { useEffect } from "react"
-import { NewTodoForm } from "./NewTodoForm"
-import { TodoList } from "./TodoList"
-import AddNewListForm from "./AddNewListForm.jsx";
 import List from "./List.jsx"
 import Header from "./Header"
 import "./styles.css";
@@ -14,24 +11,6 @@ export default function App() {
     console.log(JSON.parse(localValue))
     return localValue === null ? [] : JSON.parse(localValue)
   })
-
-  const todoListInfo = [{
-    id: 12345,
-    listItems: [{
-      id: 23441,
-      title: "name",
-      complete: false
-    }, {}]
-  }, 
-  {
-    id: 12345,
-    listItems: [{
-      id: 23441,
-      title: "name",
-      complete: false
-    }, {}]
-  }
-]
 
   useEffect(() => {
     localStorage.setItem("LIST", JSON.stringify(listList))
