@@ -1,0 +1,21 @@
+import "./styles.css"
+
+export default function AddNewListForm({ handleNewList }) {
+    return (
+        <>
+        <section>
+            <form action={handleNewList} className="new-list-form-container">
+            <label htmlFor="new-input">New List Name:</label>
+                <input 
+                name="newListName" 
+                className="new-item-form"
+                type="text"
+                placeholder="e.g Housekeeping"
+                id="new-input"
+                />
+                <button className="btn">+ Create New List</button>
+            </form>
+        </section>
+        </>
+    )
+}
