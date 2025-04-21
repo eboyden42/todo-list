@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #fffcfc;
-  color: hsl(200, 5%, 12%);
+  background: #373737;
+  color: hsl(197, 8%, 83%);
   justify-content: center;
   padding: 0;
   margin: 0 auto;
@@ -13,8 +13,8 @@ body {
 
 #header-container {
   width: 100%;
-  background-color: rgb(243, 241, 241);
-  color: rgb(45, 79, 122);
+  background-color:  #373737;
+  color: hsl(197, 8%, 83%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,11 +24,12 @@ body {
 }
 
 #logo-container {
-  color: rgb(45, 79, 122);
+  color: hsl(197, 8%, 83%);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 #logo-container > img {
@@ -48,12 +49,18 @@ main {
   margin: 0 auto;
 }
 
+#hr-break {
+  margin: 0px 0px;
+}
+
 .new-list-form-container {
+  background-color: #2e2e2e;
   border-radius: 6px;
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  padding-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 .new-form-row {
@@ -62,11 +69,23 @@ main {
   gap: 0.1rem;
 }
 
+.new-item-input {
+  outline: none;
+  border: none;
+  background: #373737;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  color: hsl(0, 0%, 62%);
+}
+
 .new-item-form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 0.5rem;
+  background: #2e2e2e;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 5px;
+  gap: 12px;
 }
 
 .form-row {
@@ -75,9 +94,18 @@ main {
   gap: 0.1rem;
 }
 
+#item {
+  outline: none;
+  border: none;
+  background: #373737;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  color: hsl(0, 0%, 62%);
+}
+
 .form-row > label {
   font-weight: 400;
-  color: rgb(45, 79, 122)
+  color: hsl(197, 8%, 83%)
 }
 
 .btn {
@@ -127,16 +155,18 @@ main {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
-  color: rgb(45, 79, 122)
+  font-weight: 600;
+  color: hsl(197, 8%, 83%)
 }
 
 .list {
   margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   margin-left: 1rem;
   list-style: none;
-  color: rgb(45, 79, 122)
+  color: hsl(197, 8%, 83%)
 }
 
 .list li:has(input:checked) label {

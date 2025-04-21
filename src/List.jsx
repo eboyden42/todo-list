@@ -9,7 +9,6 @@ export default function List({ listTitle, todos, addTodo, toggleTodo, deleteTodo
         <>
             <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} title={listTitle} listID={id} />
             <NewTodoForm addTodo={addTodo} listID={id} deleteList={deleteList} />
-            <hr></hr>
         </>
     )
 }
